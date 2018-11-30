@@ -1,0 +1,20 @@
+version: '2'
+
+services:
+  maven-nexus:
+     image: sonatype/nexus3:3.14.0
+     restart: always
+     container_name: maven-nexus
+     ports:
+       - "8081:8081"
+     volumes:
+       - /etc/timezone:/etc/timezone
+       - /etc/localtime:/etc/localtime
+       - /tmp/nexus-data:/var/nexus-data
+     networks:
+       - nexus-docker
+
+
+networks:
+  nexus-docker:
+    driver: bridge
