@@ -1,12 +1,12 @@
 ### 1.首先下载nexus镜像并把私服跑起来
 
-- 运行build-image.sh下载镜像
+- 运行build-image.sh下载镜像 仅限在mac和linux系统下面   如果是Windows系统  乖乖的在cmd 下面敲build-image.sh 文件的那行命令吧
 
     ```js
      ./build-image.sh
     ```
 
-- 将nexus运行起来
+- 将nexus运行起来 如果是Windows系统 则需要改变一下文件的挂载目录` - /tmp/nexus-data:/var/nexus-data` 把/tmp目录换成的本地某个盘 要不然会报错哦
 
     ```js
       //在项目根目录下执行
