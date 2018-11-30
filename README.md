@@ -16,8 +16,10 @@
 ### 2.打开浏览器登录进私服默认密码是 admin 密码是 admin123
 
 - 首先进去创建一个用户，赋予admin的权限
+![Image text](https://raw.githubusercontent.com/hongmaju/light7Local/master/img/productShow/20170518152848.png)
    
 - 再创建一个自己的仓库
+![Image text](https://raw.githubusercontent.com/hongmaju/light7Local/master/img/productShow/20170518152848.png)
    
 ### 3. 修改本地maven的.m2/settings.xml文件
 ```xml
@@ -84,6 +86,7 @@
 ```
 
 ### 5.这个时候我们去私服查询我们的jar，看下是否上传成功啦
+![Image text](https://raw.githubusercontent.com/hongmaju/light7Local/master/img/productShow/20170518152848.png)
 
 
 
