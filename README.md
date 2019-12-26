@@ -109,6 +109,12 @@
         </repositories>
 ```
 
+### 将本地文件传到私服
 
+- 首先要在maven的setting.xml设置好私服账号
+
+```
+mvn deploy:deploy-file -Dmaven.test.skip=true -Dfile=/Users/fxq/Desktop/jave-1.0.2.jar -DgroupId=it.sauronsoftware -DartifactId=jave -Dversion=1.0.2 -Dpackaging=jar -DrepositoryId=huluwa -Durl=http://api.fangxinqian.cn:8081/repository/huluwa/
+```
 
 
